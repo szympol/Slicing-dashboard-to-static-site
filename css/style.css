@@ -110,3 +110,4 @@ template { display: none; }
 /* Components */
 /* Sections */
 /* Pages / Views */
+body { max-width: 100%; }
