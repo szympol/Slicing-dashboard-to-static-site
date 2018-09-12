@@ -1,0 +1,5 @@
+Tasks:
+ ☐ numarate compontents for styleguide & scss
+ ☐ print components, transfer to a code in scss & cross them out from a paper;
+ ☐ styleguide --> grid, naked styled components, 
+ ☐ layout --> add global style to a given page in its body (<body class="registration-form-template">...</body>).
