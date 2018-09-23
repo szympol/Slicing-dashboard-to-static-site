@@ -1,0 +1,107 @@
+//TEXTS
+.pageHeader {
+    font-size: $paragraph-font-size;
+    text-transform: uppercase;
+    font-family: $pageHeader-font;
+    color: $basicFont-color;
+}
+.sectionHeader {
+    font-size: $paragraph-font-size;
+    text-transform: initial;
+    font-family: $sectionHeader-font;
+    color: $basicFont-color;
+    font-weight: bold;
+}
+
+//LINKS
+.link {
+    text-transform: lowercase;
+    font-family: $pageHeader-font;
+    cursor: pointer;
+    color: $links-color;
+    text-decoration: none;
+    &:hover {
+        color: $leftSidedHighlightOfSideBar-color;
+    }
+}
+.link-large {
+    font-size: $paragraph-font-size;
+    font-weight: 400;
+}
+.link-small{
+    font-size: $link-small-size;
+    font-weight: 400;
+}
+.link-icon {
+    width: $link-small-size;
+    height: $link-small-size;
+    fill: $links-color;
+    &:hover{
+        fill: $leftSidedHighlightOfSideBar-color;
+    }
+}
+
+//COROR TABS
+.tabs {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: $paragraph-font-size;
+    font-family: $pageHeader-font;
+    color: $basicFont-color;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    &:hover,:focus {
+        background-color: $hoverBackground-color;
+    }
+}
+.fa-circle {
+    margin-right: 10px;
+    color: $links-color;
+}
+
+//TABLE WITH LINK
+.table {
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    margin-bottom: 20px;
+    tr {
+        border-top: 1px solid $hoverBackground-color;
+        &:hover {
+            background: $hoverBackground-color;
+        }
+        th {
+            text-align: left;
+            > p {
+                margin-left: 20px;
+            }
+            a {
+                p{
+                    text-align: right;
+                    svg {
+                        margin-right: 20px;
+                        
+                    }
+                }
+
+            }
+        }
+        
+    }
+    tr:last-of-type {
+        border-bottom: 1px solid $hoverBackground-color;
+    }
+}
