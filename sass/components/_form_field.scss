@@ -13,6 +13,8 @@
     font-weight: bold;
 }
 
+
+
 //LINKS
 .link {
     text-transform: lowercase;
@@ -66,7 +68,15 @@
 }
 .fa-circle {
     margin-right: 10px;
+}
+.tabs-links-color {
     color: $links-color;
+}
+.tabs-mainButton-color{
+    color: $mainButton-color;
+}
+.tabs-onlineStatus-color {
+    color: $onlineStatus-color;
 }
 
 //TABLE WITH LINK
@@ -83,7 +93,7 @@
         &:hover {
             background: $hoverBackground-color;
         }
-        th {
+        td {
             text-align: left;
             > p {
                 margin-left: 20px;
@@ -105,3 +115,80 @@
         border-bottom: 1px solid $hoverBackground-color;
     }
 }
+
+//LIST WITH ONE DIGIT
+.listWithOneDigit {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid $hoverBackground-color;
+    > p {
+        margin-bottom: 5px;
+    }
+}
+
+//LARGE TABLE WITH SORTING
+.table-sorting {
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    margin-bottom: 20px;
+    font-size: $table-sorting-size;
+    thead{
+        tr {
+            border-top: 1px solid $hoverBackground-color;
+        th {
+            text-align: left;
+            p {
+                color: $basicFont-color;
+                display: inline-block;
+                text-align: left;
+            }
+            svg {
+                width: $table-sorting-size;
+                height: $table-sorting-size;
+                fill: $basicFont-color;
+                
+            }
+            &:hover {
+                color: $sideBar-background-color;
+                background: $hoverBackground-color;
+            }
+        }
+    }
+}
+    tbody{
+        tr {
+            border-top: 1px solid $hoverBackground-color;
+            &:hover {
+                background: $hoverBackground-color;
+            }
+            td {
+                text-align: left;
+                > p {
+                    margin-left: 20px;
+                }
+                a {
+                    p{
+                        text-align: right;
+                        svg {
+                            margin-right: 20px;
+                            
+                        }
+                    }
+    
+                }
+            }
+            
+        }
+    }
+    
+    tr:last-of-type {
+        border-bottom: 1px solid $hoverBackground-color;
+    }
+}
+

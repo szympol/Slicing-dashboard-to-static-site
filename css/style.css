@@ -128,7 +128,13 @@ template { display: none; }
 
 .tabs:hover, .tabs :focus { background-color: #e3e3e3; }
 
-.fa-circle { margin-right: 10px; color: #56819F; }
+.fa-circle { margin-right: 10px; }
+
+.tabs-links-color { color: #56819F; }
+
+.tabs-mainButton-color { color: #F58220; }
+
+.tabs-onlineStatus-color { color: #04AE00; }
 
 .table { width: 100%; max-width: 100%; background-color: transparent; border-collapse: collapse; border-spacing: 0; display: table; margin-bottom: 20px; }
 
@@ -136,15 +142,45 @@ template { display: none; }
 
 .table tr:hover { background: #e3e3e3; }
 
-.table tr th { text-align: left; }
+.table tr td { text-align: left; }
 
-.table tr th > p { margin-left: 20px; }
+.table tr td > p { margin-left: 20px; }
 
-.table tr th a p { text-align: right; }
+.table tr td a p { text-align: right; }
 
-.table tr th a p svg { margin-right: 20px; }
+.table tr td a p svg { margin-right: 20px; }
 
 .table tr:last-of-type { border-bottom: 1px solid #e3e3e3; }
+
+.listWithOneDigit { display: -ms-flexbox; display: flex; -ms-flex-flow: row; flex-flow: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -ms-flex-pack: justify; justify-content: space-between; border-bottom: 1px solid #e3e3e3; }
+
+.listWithOneDigit > p { margin-bottom: 5px; }
+
+.table-sorting { width: 100%; max-width: 100%; background-color: transparent; border-collapse: collapse; border-spacing: 0; display: table; margin-bottom: 20px; font-size: 12px; }
+
+.table-sorting thead tr { border-top: 1px solid #e3e3e3; }
+
+.table-sorting thead tr th { text-align: left; }
+
+.table-sorting thead tr th p { color: #979797; display: inline-block; text-align: left; }
+
+.table-sorting thead tr th svg { width: 12px; height: 12px; fill: #979797; }
+
+.table-sorting thead tr th:hover { color: #333; background: #e3e3e3; }
+
+.table-sorting tbody tr { border-top: 1px solid #e3e3e3; }
+
+.table-sorting tbody tr:hover { background: #e3e3e3; }
+
+.table-sorting tbody tr td { text-align: left; }
+
+.table-sorting tbody tr td > p { margin-left: 20px; }
+
+.table-sorting tbody tr td a p { text-align: right; }
+
+.table-sorting tbody tr td a p svg { margin-right: 20px; }
+
+.table-sorting tr:last-of-type { border-bottom: 1px solid #e3e3e3; }
 
 /* Sections */
 /* Pages / Views */
