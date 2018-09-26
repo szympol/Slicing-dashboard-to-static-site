@@ -138,26 +138,34 @@
     display: table;
     margin-bottom: 20px;
     font-size: $table-sorting-size;
+    cursor: pointer;
     thead{
         tr {
             border-top: 1px solid $hoverBackground-color;
         th {
             text-align: left;
+
             p {
                 color: $basicFont-color;
                 display: inline-block;
                 text-align: left;
+                padding: 6px 12px;
+                border-radius: 2px;
+                svg {
+                    width: $table-sorting-svg-size;
+                    height: $table-sorting-svg-size;
+                    fill: $basicFont-color;
+                    margin-bottom: 1px;
+                    margin-left: 7px;
+                    opacity: .0;
+                }
+                &:hover {
+                    color: $sideBar-background-color;
+                    background: $hoverBackground-color;
+                }
             }
-            svg {
-                width: $table-sorting-size;
-                height: $table-sorting-size;
-                fill: $basicFont-color;
-                
-            }
-            &:hover {
-                color: $sideBar-background-color;
-                background: $hoverBackground-color;
-            }
+
+
         }
     }
 }
@@ -167,22 +175,18 @@
             &:hover {
                 background: $hoverBackground-color;
             }
-            td {
+            > td {
                 text-align: left;
+                
+             > p:first-child {
+                    margin-left: 12px;
+                }
+            }
+           /* > td:first-child {
                 > p {
                     margin-left: 20px;
                 }
-                a {
-                    p{
-                        text-align: right;
-                        svg {
-                            margin-right: 20px;
-                            
-                        }
-                    }
-    
-                }
-            }
+            }*/
             
         }
     }
@@ -192,3 +196,6 @@
     }
 }
 
+.opacity-full {
+    opacity: 1 !important;
+}
