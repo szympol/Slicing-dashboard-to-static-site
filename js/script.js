@@ -88,3 +88,44 @@ tableSortingTextElements[3].addEventListener('mouseenter', function(){
 tableSortingTextElements[3].addEventListener('mouseleave', function(){
     tableSortingSvgElements[3].classList.remove('opacity-full');
 });
+
+
+
+var BackgroundOnPaginationElement = function(){
+    this.classList.toggle('active');
+    /*for (var i = 0; i < selectPaginationElements.length; i++){
+        if(selectPaginationElementsLoopedNodeList[i].classList.contains('active')){
+
+        }
+    }*/
+    
+};
+
+var selectPaginationElements = document.querySelectorAll('.pagination li a');
+
+selectPaginationElements[1].addEventListener('click', BackgroundOnPaginationElement);
+selectPaginationElements[2].addEventListener('click', BackgroundOnPaginationElement);
+selectPaginationElements[3].addEventListener('click', BackgroundOnPaginationElement);
+selectPaginationElements[4].addEventListener('click', BackgroundOnPaginationElement);
+selectPaginationElements[5].addEventListener('click', BackgroundOnPaginationElement);
+selectPaginationElements[6].addEventListener('click', BackgroundOnPaginationElement);
+selectPaginationElements[7].addEventListener('click', BackgroundOnPaginationElement);
+selectPaginationElements[8].addEventListener('click', BackgroundOnPaginationElement);
+
+/*
+function toggleMenu(visible) {
+    document.querySelector('.menu').classList.toggle('show', visible);
+  };
+
+  document.querySelector('.hamburger').addEventListener('click', function(e) {
+    e.preventDefault();
+    toggleMenu()
+  });
+*/
+
+  let menu = document.querySelector('.hamburger');
+
+menu.addEventListener('click', function() {
+  this.classList.toggle('hamburger--active');
+}, false);
+  

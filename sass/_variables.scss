@@ -1,8 +1,9 @@
 /* Colors */
 $paragraph-color: #000000;
 $brand-main-color: #ff0000;
-$sideBar-background-color: #333;
+$sideBar-background-color: #191919;
 $basicFont-color: #979797;
+$basifFontBright-color: rgba(151,151,151, 0.6);
 $hoverBackground-color: #e3e3e3;
 $betweenSectionBackground-color: #F5F5F2;
 $mainButton-color: #F58220;
@@ -14,6 +15,8 @@ $negativeNotification-color: #EC7171;
 $moreRedNegativeNotification-color: #DE5252;
 $links-color: #56819F;
 /* Font sizes */
+$logo-size: 35px;
+$button-font-size: 18px;
 $paragraph-font-size: 16px;
 $link-small-size: 13px;
 $table-sorting-size: 12px;
@@ -22,6 +25,7 @@ $table-sorting-svg-size: 8px;
 /* Fonts */
 $default-font: "Open Sans", Helvetica, Arial;
 $brand-font: "Open Sans", Helvetica, Arial;
+$logo-font: 'Dancing Script', cursive;
 $paragraph-font: "Open Sans", Helvetica, Arial;
 $pageHeader-font: 'Roboto', sans-serif;
 $sectionHeader-font: 'Roboto', sans-serif;
