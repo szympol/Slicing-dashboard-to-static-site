@@ -194,7 +194,7 @@ template { display: none; }
 
 .btn--link { background-color: #e3e3e3; }
 
-.btn--paddingRefresh { padding: 10px; }
+.btn--paddingRefresh { padding: 6px 8px; }
 
 .btn_svg { width: 16px; height: 16px; fill: #fff; vertical-align: middle; }
 
@@ -210,16 +210,38 @@ template { display: none; }
 
 .active { background-color: #e3e3e3 !important; font-size: 16px; text-transform: initial; font-family: "Roboto", sans-serif; color: #979797 !important; font-weight: bold; border-radius: 2px; }
 
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button { display: none; }
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { display: none; }
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; padding-right: 40px; }
+
+/* A few custom styles for date inputs */
+input[type="date"] { -webkit-appearance: none; -moz-appearance: none; appearance: none; color: #000000; font-family: "Roboto", sans-serif; font-size: 13px; border: 1px solid transparent; padding: 8px; display: inline-block !important; visibility: visible !important; }
+
+input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance: none; border-right: 1px solid #e3e3e3; }
+
+.calendarBackground { background: #fff url(../../solo-project-1/images/icons/calendar.svg) 95% 50% no-repeat; background-size: 13px 13px; box-shadow: none; }
+
+#calendar { border: 1px solid #e3e3e3; display: inline-block; border-radius: 4px; margin-right: 10px; box-shadow: none; /* .calendar_line { border-right: 10px solid $hoverBackground-color !important; width: 10px; height: auto; display: inline-block; padding: 10px 0px; }*/ }
+
+#calendar:hover, #calendar :focus { color: #000000; border: 1px solid #979797; box-shadow: none; }
+
 .sideBar { display: block; font-size: 16px; font-family: "Roboto", sans-serif; color: #979797; background-color: #191919; }
 
 .logo { display: inline-block; font-family: "Dancing Script", cursive; font-size: 35px; margin-top: 0px; color: #fff; }
 
 .block { display: block; }
 
-.menu { display: none; }
-
-.show { display: inline-block; }
-
+/*.menu{
+    display: none;
+}
+.show{
+    display: inline-block;
+}*/
 .hamburger { display: inline-block; margin: 0; padding-left: 60px; border: 0; background-color: transparent; cursor: pointer; }
 
 .hamburger:focus > .hamburger__container { box-shadow: 0 0 2px 2px #51a7e8; }
@@ -241,6 +263,10 @@ template { display: none; }
 .hamburger--active .hamburger__bars:after { bottom: 0; transform: rotate(-90deg); transition: bottom 100ms ease-out,  transform 220ms 120ms ease-in-out; }
 
 .hamburger:focus, .hamburger__container:focus { outline: none; }
+
+.position { position: absolute; }
+
+.position span > nav { position: relative; }
 
 /* Sections */
 /* Pages / Views */

@@ -129,3 +129,25 @@ menu.addEventListener('click', function() {
   this.classList.toggle('hamburger--active');
 }, false);
   
+
+
+
+var unhideCalendarIconStartCell = document.getElementById('start');
+var unhideCalendarIconEndCell = document.getElementById('end');
+
+unhideCalendarIconStartCell.addEventListener('mouseenter', function(){
+    unhideCalendarIconStartCell.classList.add('calendarBackground');
+});
+
+unhideCalendarIconStartCell.addEventListener('mouseleave', function(){
+    unhideCalendarIconStartCell.classList.remove('calendarBackground');
+});
+
+unhideCalendarIconEndCell.addEventListener('mouseenter', function(){
+    unhideCalendarIconEndCell.classList.add('calendarBackground');
+});
+
+unhideCalendarIconEndCell.addEventListener('mouseleave', function(){
+    unhideCalendarIconEndCell.classList.remove('calendarBackground');
+});
+

@@ -275,7 +275,7 @@
 }
 
 .btn--paddingRefresh {
-    padding: 10px;
+    padding: 6px 8px;
 }
 
 .btn_svg {
@@ -322,6 +322,66 @@
     color: $basicFont-color !important;
     font-weight: bold;
     border-radius: 2px;
+}
+
+
+//DATES
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    padding-right: 40px;
+}
+ 
+/* A few custom styles for date inputs */
+input[type="date"] {
+    appearance: none;
+    color: $paragraph-color;
+    font-family: $sectionHeader-font;
+    font-size: $link-small-size;
+    border:1px solid transparent;
+    padding: 8px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+input[id="start"] {
+    appearance: none; 
+    border-right: 1px solid $hoverBackground-color;
+}
+
+.calendarBackground {
+    background: #fff url(../../solo-project-1/images/icons/calendar.svg) 95% 50% no-repeat;
+    background-size: $link-small-size $link-small-size;
+    box-shadow: none;
+}
+#calendar {
+    border:1px solid $hoverBackground-color;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 10px;
+    box-shadow: none;
+    &:hover, :focus{
+        color: $paragraph-color;
+        border:1px solid $basicFont-color;
+        box-shadow: none;
+    }/*
+    .calendar_line {
+        border-right: 10px solid $hoverBackground-color !important;
+        width: 10px;
+        height: auto;
+        display: inline-block;
+        padding: 10px 0px;
+    }*/
 }
 
 

@@ -16,12 +16,12 @@
 .block {
     display: block;
 }
-.menu{
+/*.menu{
     display: none;
 }
 .show{
     display: inline-block;
-}
+}*/
 
 .hamburger {
     display: inline-block;
@@ -90,5 +90,12 @@
   .hamburger, .hamburger__container {
     &:focus {
       outline: none;
+    }
+  }
+
+  .position {
+    position: absolute;
+    span > nav {
+      position: relative;
     }
   }
