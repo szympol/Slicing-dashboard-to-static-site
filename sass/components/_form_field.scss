@@ -186,10 +186,11 @@
                     &:hover {
                         color: $sideBar-background-color;
                         background: $hoverBackground-color;
+                        /*svg {
+                            opacity: 1;
+                        }*/
                     }
                 }
-
-
             }
         }
     }

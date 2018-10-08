@@ -316,6 +316,8 @@ template { display: none; }
 
 .table-sorting thead tr th p:hover { color: #191919; background: #e3e3e3; }
 
+.table-sorting thead tr th p:hover svg { opacity: 1; }
+
 .table-sorting tbody tr { border-top: 1px solid #e3e3e3; /* > td:first-child { > p { margin-left: 20px; } }*/ }
 
 .table-sorting tbody tr:hover { background: #e3e3e3; }

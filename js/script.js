@@ -6,20 +6,22 @@
 var tableSortingTextElements = document.querySelectorAll('.table-sorting thead tr th p');
 for (var i = 0; i < tableSortingTextElements.length; i++){
     var tableSortingTextElementsLoopedNodeList = tableSortingTextElements[i];
+    tableSortingTextElementsLoopedNodeList.addEventListener('mouseenter', function(){
+        tableSortingSvgElementsLoopedNodeList.classList.add('opacity-full');
+    });
 }
 
 var tableSortingSvgElements = document.querySelectorAll('.table-sorting thead tr th p svg');
 for (var i = 0; i < tableSortingSvgElements.length; i++){
     var tableSortingSvgElementsLoopedNodeList = tableSortingSvgElements[i];
+    tableSortingTextElementsLoopedNodeList.addEventListener('mouseleave', function(){
+        tableSortingSvgElementsLoopedNodeList.classList.remove('opacity-full');
+    });
 }
 
-tableSortingTextElementsLoopedNodeList.addEventListener('mouseenter', function(){
-    tableSortingSvgElementsLoopedNodeList.classList.add('opacity-full');
-});
-tableSortingTextElementsLoopedNodeList.addEventListener('mouseleave', function(){
-    tableSortingSvgElementsLoopedNodeList.classList.remove('opacity-full');
-});
 */
+
+
 
 
 //first one
@@ -38,26 +40,20 @@ tableSortingTextElements.addEventListener('mouseleave', function(){
 
 
 //first one 
-/*
+
 var tableSortingTextElements = document.querySelectorAll('.table-sorting thead tr th p');
 var tableSortingSvgElements = document.querySelectorAll('.table-sorting thead tr th p svg');
-[].forEach.call(tableSortingTextElements, function(){
-    document.querySelector('.table-sorting thead tr th p').addEventListener('mouseenter', function(){
-        tableSortingSvgElements[0].classList.add('opacity-full');
-        tableSortingSvgElements[1].classList.add('opacity-full');
-        tableSortingSvgElements[2].classList.add('opacity-full');
-        tableSortingSvgElements[3].classList.add('opacity-full');
+[].forEach.call(tableSortingTextElements, function(item, index){
+    item.addEventListener('mouseenter', function(){
+        tableSortingSvgElements[index].classList.add('opacity-full');
     });
-    
-    document.querySelector('.table-sorting thead tr th p').addEventListener('mouseleave', function(){
-        tableSortingSvgElements[0].classList.remove('opacity-full');
-        tableSortingSvgElements[1].classList.remove('opacity-full');
-        tableSortingSvgElements[2].classList.remove('opacity-full');
-        tableSortingSvgElements[3].classList.remove('opacity-full');
+    item.addEventListener('mouseleave', function(){
+        tableSortingSvgElements[index].classList.remove('opacity-full');
     });
 });
-*/
 
+
+/*
 var tableSortingTextElements = document.querySelectorAll('.table-sorting thead tr th p');
 var tableSortingSvgElements = document.querySelectorAll('.table-sorting thead tr th p svg');
 
@@ -88,7 +84,7 @@ tableSortingTextElements[3].addEventListener('mouseenter', function(){
 tableSortingTextElements[3].addEventListener('mouseleave', function(){
     tableSortingSvgElements[3].classList.remove('opacity-full');
 });
-
+*/
 
 
 var BackgroundOnPaginationElement = function(){
