@@ -298,16 +298,18 @@
     border-radius: 4px;
     cursor: pointer;
     font-family: $pageHeader-font;
+
     >li {
         display: inline;
 
-        >a{
+        >a {
             float: left;
             padding: 6px 12px;
             margin-left: -1px;
             color: $links-color;
             text-decoration: none;
             background-color: #fff;
+
             &:hover {
                 color: $leftSidedHighlightOfSideBar-color;
             }
@@ -333,7 +335,7 @@ input[type="date"]::-webkit-clear-button {
 }
 
 /* Removes the spin button */
-input[type="date"]::-webkit-inner-spin-button { 
+input[type="date"]::-webkit-inner-spin-button {
     display: none;
 }
 
@@ -342,21 +344,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
     padding-right: 40px;
 }
- 
+
 /* A few custom styles for date inputs */
 input[type="date"] {
     appearance: none;
     color: $paragraph-color;
     font-family: $sectionHeader-font;
     font-size: $link-small-size;
-    border:1px solid transparent;
+    border: 1px solid transparent;
     padding: 8px;
     display: inline-block !important;
     visibility: visible !important;
 }
 
 input[id="start"] {
-    appearance: none; 
+    appearance: none;
     border-right: 1px solid $hoverBackground-color;
 }
 
@@ -365,17 +367,22 @@ input[id="start"] {
     background-size: $link-small-size $link-small-size;
     box-shadow: none;
 }
+
 #calendar {
-    border:1px solid $hoverBackground-color;
+    border: 1px solid $hoverBackground-color;
     display: inline-block;
     border-radius: 4px;
     margin-right: 10px;
     box-shadow: none;
-    &:hover, :focus{
+
+    &:hover,
+    :focus {
         color: $paragraph-color;
-        border:1px solid $basicFont-color;
+        border: 1px solid $basicFont-color;
         box-shadow: none;
-    }/*
+    }
+
+    /*
     .calendar_line {
         border-right: 10px solid $hoverBackground-color !important;
         width: 10px;
@@ -386,3 +393,52 @@ input[id="start"] {
 }
 
 
+//NOTIFICATIONS
+.notification {
+    display: inline-block;
+    color: #fff;
+    padding: 8px 18px;
+    font-size: $notification-font-size;
+    font-family: $sectionHeader-font;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    //text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    background-image: none;
+}
+
+.notification-positive {
+    background-color: $positiveNotification-color;
+    transition: all .4s ease-out;
+    &:hover,
+    :focus {
+        background-color: $greenerPositiveNotification-color;
+    }
+}
+
+.notification-negative {
+    background-color: $negativeNotification-color;
+    transition: all .4s ease-out;
+    &:hover,
+    :focus {
+        background-color: $moreRedNegativeNotification-color;
+    }
+}
+
+.notification_svg {
+    width: $paragraph-font-size;
+    height: $paragraph-font-size;
+    fill: #fff;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-top: -4px;
+}
+.notification_svg--close {
+    width: $notification-font-size;
+    height: $notification-font-size;   
+    margin-right: -10px;
+    margin-left: 50px;
+}

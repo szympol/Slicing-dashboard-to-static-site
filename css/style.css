@@ -314,9 +314,7 @@ template { display: none; }
 
 .table-sorting thead tr th p svg { width: 8px; height: 8px; fill: #979797; margin-bottom: 1px; margin-left: 7px; opacity: .0; }
 
-.table-sorting thead tr th p:hover { color: #191919; background: #e3e3e3; }
-
-.table-sorting thead tr th p:hover svg { opacity: 1; }
+.table-sorting thead tr th p:hover { color: #191919; background: #e3e3e3; /*svg { opacity: 1; }*/ }
 
 .table-sorting tbody tr { border-top: 1px solid #e3e3e3; /* > td:first-child { > p { margin-left: 20px; } }*/ }
 
@@ -379,6 +377,20 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 #calendar { border: 1px solid #e3e3e3; display: inline-block; border-radius: 4px; margin-right: 10px; box-shadow: none; /* .calendar_line { border-right: 10px solid $hoverBackground-color !important; width: 10px; height: auto; display: inline-block; padding: 10px 0px; }*/ }
 
 #calendar:hover, #calendar :focus { color: #000000; border: 1px solid #979797; box-shadow: none; }
+
+.notification { display: inline-block; color: #fff; padding: 8px 18px; font-size: 14px; font-family: "Roboto", sans-serif; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; border: 1px solid transparent; background-image: none; }
+
+.notification-positive { background-color: #96CC9B; transition: all .4s ease-out; }
+
+.notification-positive:hover, .notification-positive :focus { background-color: #74B67A; }
+
+.notification-negative { background-color: #EC7171; transition: all .4s ease-out; }
+
+.notification-negative:hover, .notification-negative :focus { background-color: #DE5252; }
+
+.notification_svg { width: 16px; height: 16px; fill: #fff; vertical-align: middle; margin-right: 6px; margin-top: -4px; }
+
+.notification_svg--close { width: 14px; height: 14px; margin-right: -10px; margin-left: 50px; }
 
 .sideBar { display: block; font-size: 16px; font-family: "Roboto", sans-serif; color: #979797; background-color: #191919; }
 

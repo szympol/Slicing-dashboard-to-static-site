@@ -22,25 +22,6 @@ for (var i = 0; i < tableSortingSvgElements.length; i++){
 */
 
 
-
-
-//first one
-/*
-var tableSortingTextElements = document.querySelector('.table-sorting thead tr th p');
-var tableSortingSvgElements = document.querySelector('.table-sorting thead tr th p svg');
-
-tableSortingTextElements.addEventListener('mouseenter', function(){
-    tableSortingSvgElements.classList.add('opacity-full');
-});
-
-tableSortingTextElements.addEventListener('mouseleave', function(){
-    tableSortingSvgElements.classList.remove('opacity-full');
-});
-*/
-
-
-//first one 
-
 var tableSortingTextElements = document.querySelectorAll('.table-sorting thead tr th p');
 var tableSortingSvgElements = document.querySelectorAll('.table-sorting thead tr th p svg');
 [].forEach.call(tableSortingTextElements, function(item, index){
