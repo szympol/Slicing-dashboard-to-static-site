@@ -430,6 +430,14 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 
 .position span > nav { position: relative; }
 
+.topbar ul { padding: 0; margin: 0; list-style-type: none; }
+
+.topbar ul li { display: inline-block; }
+
+.topbar ul li .topbar_walletIcon { width: 20px; height: 20px; fill: #979797; vertical-align: middle; }
+
+.topbar ul li select { -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline-block; border: 1px solid transparent; border-left: 1px solid #e3e3e3; padding: 5px 40px 5px 10px; font-size: 20px; font-family: "Roboto", sans-serif; border-radius: 0; color: #979797; background-image: url("data:image/svg+xml;utf8, <svg fill='#979797' height='20' width='20' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'\aviewBox='0 0 7 5'style='enable-background:new 0 0 7 5;'xml:space='preserve'> <polygon points='3.5,4.2 0.1,0.9 0.9,0.1 3.5,2.8 6.1,0.1 6.9,0.9 '/> </svg>"); background-size: 22px auto; background-repeat: no-repeat; background-position: right 5px center; }
+
 /* Sections */
 /* Pages / Views */
 * { box-sizing: border-box; font-family: "Open Sans", Helvetica, Arial; line-height: 1.42857143; }
