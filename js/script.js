@@ -147,3 +147,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
     return !isFormValidate ? event.preventDefault() : true;
   });
 
+
+
+/*
+  document.querySelector('#wallet').focus(function(){
+    setTimeout(function(){
+        document.querySelector('#wallet').hide();
+    },20000);
+});
+*/
