@@ -441,3 +441,54 @@ input[id="start"] {
     margin-right: -10px;
     margin-left: 50px;
 }
+
+//Form field
+.field {
+    label {
+        @extend .sectionHeader;
+        display: block;
+        padding: 5px 0;
+    }
+    input {
+        appearance: none;
+        min-width: 90%;
+        padding: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+        border: none; 
+        border:solid 1px $hoverBackground-color;
+        font-size: $notification-font-size;
+        &:hover {
+            border:solid 1px $basicFont-color;
+        }
+        &::placeholder {
+            color: $hoverBackground-color;
+        }
+    }
+}
+
+.field--signup {
+    label {
+        @extend .sectionHeader;
+        display: block;
+        padding: 10px 0;
+    }
+    textarea {
+        appearance: none;
+        min-width: 90%;
+        height: 250px;
+        padding: 20px;
+        border-radius: 3px;
+        resize: none;
+        cursor: pointer;
+        border: none; 
+        border:solid 1px $hoverBackground-color;
+        font-size: $table-sorting-size;
+        &:hover {
+            border:solid 1px $basicFont-color;
+        }
+        &::placeholder {
+            color: $hoverBackground-color;
+        }
+    }
+}

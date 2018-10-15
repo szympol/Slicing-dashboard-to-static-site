@@ -258,7 +258,7 @@ template { display: none; }
 /* Components */
 .pageHeader { font-size: 16px; text-transform: uppercase; font-family: "Roboto", sans-serif; color: #979797; }
 
-.sectionHeader { font-size: 16px; text-transform: initial; font-family: "Roboto", sans-serif; color: #979797; font-weight: bold; }
+.sectionHeader, .field label, .field--signup label { font-size: 16px; text-transform: initial; font-family: "Roboto", sans-serif; color: #979797; font-weight: bold; }
 
 .link { text-transform: lowercase; font-family: "Roboto", sans-serif; cursor: pointer; color: #56819F; text-decoration: none; }
 
@@ -391,6 +391,26 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 .notification_svg { width: 16px; height: 16px; fill: #fff; vertical-align: middle; margin-right: 6px; margin-top: -4px; }
 
 .notification_svg--close { width: 14px; height: 14px; margin-right: -10px; margin-left: 50px; }
+
+.field label { display: block; padding: 5px 0; }
+
+.field input { -webkit-appearance: none; -moz-appearance: none; appearance: none; min-width: 90%; padding: 10px; border-radius: 3px; cursor: pointer; border: none; border: solid 1px #e3e3e3; font-size: 14px; }
+
+.field input:hover { border: solid 1px #979797; }
+
+.field input:-ms-input-placeholder { color: #e3e3e3; }
+
+.field input::placeholder { color: #e3e3e3; }
+
+.field--signup label { display: block; padding: 10px 0; }
+
+.field--signup textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; min-width: 90%; height: 250px; padding: 20px; border-radius: 3px; resize: none; cursor: pointer; border: none; border: solid 1px #e3e3e3; font-size: 12px; }
+
+.field--signup textarea:hover { border: solid 1px #979797; }
+
+.field--signup textarea:-ms-input-placeholder { color: #e3e3e3; }
+
+.field--signup textarea::placeholder { color: #e3e3e3; }
 
 .sideBar { display: block; font-size: 16px; font-family: "Roboto", sans-serif; color: #979797; background-color: #191919; }
 
