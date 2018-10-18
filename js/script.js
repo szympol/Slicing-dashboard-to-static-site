@@ -156,3 +156,18 @@ document.querySelector('form').addEventListener('submit', function(event) {
     },20000);
 });
 */
+
+
+var _R = document.getElementById("r"),
+_W = _R.parentNode,
+_O = _R.nextElementSibling;
+
+document.documentElement.classList.add("js");
+
+_R.addEventListener(
+"input",
+function (e) {
+	_O.value = _R.value;
+	_W.style.setProperty("--val", +_R.value);
+},
+false);

@@ -517,18 +517,56 @@
         </form>
 
         <form action="" method="POST">
-                <div class="field_select_language">
-                    <label for="">Language</label>
-                    <select name="language" id="language">
-                        <option value="item-1">EN</option>
-                        <option value="item-2">ES</option>
-                        <option value="item-3">IT</option>
-                    </select>
-                </div>
-            </form>
+            <div class="field_select_language">
+                <label for="">Language</label>
+                <select name="language" id="language">
+                    <option value="english">EN</option>
+                    <option value="spanish">ES</option>
+                    <option value="italian">IT</option>
+                </select>
+            </div>
+        </form>
+        <br><br>
+        <form action="" method="POST">
+            <div class="field_loginName">
+                <input type="text" id="loginName" name="loginName" placeholder="login name" required>
+            </div>
+        </form>
+        <br><br>
+        <form action="" method="POST">
+            <div class="field_password">
+                <input type="password" id="password" name="password" minlength="8" required placeholder="password">
+            </div>
+        </form>
+
+        <br>
+<!--         <form>
+            <div>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+        </form> -->
+
+
+        <div class="wrap" style="--min: 0;--max: 100;--val: 50;">
+            <input id="r" type="range" />
+            <output for="r">50</output>
+        </div>
+        
+        <br>
+
+        <form>
+            <div>
+                <label>
+                        <input type="checkbox">
+                        <div class="icon"></div>
+                        <span>Wyrażam zgodę na przetwarzanie...</span>
+                        
+                </label>
+            </div>
+        </form>
     </div>
-    
-<!--     <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>
+
+    <!--     <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>
         .st0{fill:#FFFFFF;}
         .st1{fill:#D81E34;}
     </style><g><rect class="st0" height="149.4" width="512" y="106.7"/><rect class="st1" height="149.3" width="512" y="256"/></g></svg>
