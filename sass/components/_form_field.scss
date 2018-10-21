@@ -686,36 +686,121 @@ background-size: 12px auto;
 
 
 
- label {
+.checkboxList {
     min-width: 90%;
-    min-height: 20px;
-    padding: 10px 0;
-    cursor: pointer;
-    border: none;
-    font-size: $table-sorting-size;
-    font-family: $pageHeader-font;
-    display: inline-block;
-
-    input[type="checkbox"] {
-        position: absolute;
-        margin: 0;
-        width: 16px;
-        height: 16px;
-        opacity: 0;
-
-        + .icon {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            border: 2px solid #000000;
+    input[type=checkbox] {
+        display: none;
+        + label {
+            display: block;
+            margin: 0.3em;
+            cursor: pointer;
+            padding: 0.3em;
+            font-size: $link-small-size;
+            font-family: $pageHeader-font;
+            &:before {
+                content: "\2714";
+                border: solid 1px $hoverBackground-color;
+                border-radius: 3px;
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                padding-left: 0.2em;
+                padding-bottom: 0.3em;
+                margin-right: 1em;
+                vertical-align: bottom;
+                color: transparent;
+                transition: .2s;
+                background-color: white;
+            }
+            &:active:before {
+                transform: scale(0);
+            }
+            .checkboxList_link {
+                display: inline-block;
+                min-width: 75%;
+                > .checkboxList_link_flex {
+                    display: flex;
+                    flex-flow: row-reverse;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    P {
+                        display: inline-block;
+                        margin:0;
+                    }
+                    a {
+                        display: inline-block;
+                        vertical-align: bottom;
+                        opacity: 0;
+                    }
+                }
+            }
+            &:hover {
+                background-color: $hoverCheckboxList-color;
+                .checkboxList_link {
+                    > .checkboxList_link_flex {
+                        a {
+                            opacity: 1;
+                        }
+                    }
+                }
+                
+            }
+        }
+        &:checked + label:before {
+            background-color: $onlineStatus-color;
+            border-color: $onlineStatus-color;
+            color: white;
         }
 
-        &:checked + .icon {
-            background-color: #000000;
-        }
-    }
-
-    span {
-        
     }
 }
+
+.scrollbar {
+    height: 60vh;
+    overflow-y: scroll;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3em;
+    font: 100%/1.4 serif;
+    border: 1px solid rgba(0,0,0,0.25);
+    &::-webkit-scrollbar {
+        width: 1em;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: $hoverBackground-color;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $scrollbar-color;
+        outline: 1px solid slategrey;
+    }
+}
+
+.message {      
+    color: white;
+    padding: 18px 20px;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    width: 90%;
+    position: relative;
+    
+    &:after {
+      bottom: 100%;
+      left: 7%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-bottom-color: $basicFont-color;
+      border-width: 10px;
+      margin-left: -10px;
+    }
+  }
+  
+  .my-message {
+    background: $basicFont-color;
+  }
