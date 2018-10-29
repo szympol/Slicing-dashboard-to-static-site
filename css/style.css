@@ -510,6 +510,16 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 
 .messanger .messanger_status--offline { background: #e3e3e3; }
 
+.slidecontainer { width: 90%; }
+
+.slidecontainer .slider { -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 100%; height: 12px; background: #e3e3e3; outline: none; opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ transition: opacity .2s; position: relative; }
+
+.slidecontainer .slider:hover { opacity: 1; }
+
+.slidecontainer .slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 32px; height: 32px; background: #4CAF50; cursor: pointer; margin-top: 50px; background: url("../images/icons/arrow-slider.png") no-repeat; }
+
+.slidecontainer .slider::-moz-range-thumb { width: 32px; height: 32px; background: #4CAF50; cursor: pointer; margin-top: 50px; }
+
 .sideBar { display: block; font-size: 16px; font-family: "Roboto", sans-serif; color: #979797; background-color: #191919; }
 
 .logo { display: inline-block; font-family: "Dancing Script", cursive; font-size: 35px; margin-top: 0px; color: #fff; }
