@@ -430,13 +430,11 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 
 .field_select_language label { display: block; padding: 10px 0; }
 
-.field_select_language select { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: 1px solid transparent; min-width: 90%; padding: 10px; border-radius: 3px; cursor: pointer; border: solid 1px #e3e3e3; font-size: 14px; font-family: "Roboto", sans-serif; color: #979797; background-image: url("data:image/svg+xml;utf8, <svg fill='%23979797' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'\aviewBox='0 0 7 5'style='enable-background:new 0 0 7 5;'xml:space='preserve'> <polygon points='3.5,4.2 0.1,0.9 0.9,0.1 3.5,2.8 6.1,0.1 6.9,0.9'/> </svg>"); background-size: 12px auto; background-repeat: no-repeat; background-position: right 5px bottom 50%; }
+.field_select_language select { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: 1px solid transparent; min-width: 90%; padding: 10px; border-radius: 3px; cursor: pointer; border: solid 1px #e3e3e3; font-size: 14px; font-family: "Roboto", sans-serif; color: #979797; background-image: url("data:image/svg+xml;utf8, <svg fill='%23979797' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'\aviewBox='0 0 7 5'style='enable-background:new 0 0 7 5;'xml:space='preserve'> <polygon points='3.5,4.2 0.1,0.9 0.9,0.1 3.5,2.8 6.1,0.1 6.9,0.9'/> </svg>"); background-size: 12px auto; background-repeat: no-repeat; background-position: right 5px bottom 50%; /*         option[value="english"] { span { background-image: url("data:image/svg+xml;utf8, <svg fill='%23979797' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 7 5'style='enable-background:new 0 0 7 5;'xml:space='preserve'> <polygon points='3.5,4.2 0.1,0.9 0.9,0.1 3.5,2.8 6.1,0.1 6.9,0.9'/> </svg>"); background-size: 12px auto; background-repeat: no-repeat; background-position: left 5px bottom 50%; } } */ }
 
 .field_select_language select:focus { background-image: url("data:image/svg+xml;utf8, <svg fill='%23979797' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'\aviewBox='0 0 7 5'style='enable-background:new 0 0 7 5;'xml:space='preserve'> <polygon points='6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1'/> </svg>"); background-size: 12px auto; background-repeat: no-repeat; background-position: right 5px bottom 50%; }
 
 .field_select_language select:hover { border: solid 1px #979797; color: #000000; }
-
-.field_select_language select option[value="english"] span { background-image: url("data:image/svg+xml;utf8, <svg fill='%23979797' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'\aviewBox='0 0 7 5'style='enable-background:new 0 0 7 5;'xml:space='preserve'> <polygon points='3.5,4.2 0.1,0.9 0.9,0.1 3.5,2.8 6.1,0.1 6.9,0.9'/> </svg>"); background-size: 12px auto; background-repeat: no-repeat; background-position: left 5px bottom 50%; }
 
 .field_loginName input { position: relative; -webkit-appearance: none; -moz-appearance: none; appearance: none; min-width: 90%; padding: 10px; padding-left: 30px; border-radius: 3px; cursor: pointer; border: none; border: solid 1px #e3e3e3; font-size: 14px; background-image: url("data:image/svg+xml;utf8, <svg fill='%23979797' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'\a         viewBox='0 0 15 16' style='enable-background:new 0 0 15 16;' xml:space='preserve'>\a    <path d='M7.5,9c2.2,0,4-1.8,4-4c0-2.2-1.8-4-4-4s-4,1.8-4,4C3.5,7.2,5.3,9,7.5,9z M7.5,2c1.7,0,3,1.3,3,3s-1.3,3-3,3s-3-1.3-3-3\a        S5.8,2,7.5,2z M7.5,10c-3,0-5.6,2-6.3,4.9l1,0.3C2.8,12.7,5,11,7.5,11c2.5,0,4.7,1.7,5.3,4.1l1-0.3C13.1,12,10.5,10,7.5,10z'/>\a    </svg>"); background-size: 15px auto; background-repeat: no-repeat; background-position: left 10px bottom 50%; }
 
@@ -494,11 +492,23 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 
 .scrollbar::-webkit-scrollbar-thumb { background-color: #9c9c9c; outline: 1px solid slategrey; }
 
-.message { color: white; padding: 18px 20px; line-height: 26px; font-size: 16px; border-radius: 7px; margin-bottom: 30px; width: 90%; position: relative; }
+.message { padding: 0 15px; font-size: 14px; font-family: "Roboto", sans-serif; border-radius: 5px; margin-bottom: 30px; position: relative; display: inline-block; }
 
-.message:after { bottom: 100%; left: 7%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-bottom-color: #979797; border-width: 10px; margin-left: -10px; }
+.message_manager { background-color: #e3e3e3; }
 
-.my-message { background: #979797; }
+.message_manager:before { content: ' '; position: absolute; width: 0; height: 0; top: -10px; left: 0; border: 7px solid; border-color: transparent transparent #e3e3e3 #e3e3e3; z-index: -1; }
+
+.message_user { background-color: #979797; color: white; }
+
+.message_user:before { content: ' '; position: absolute; width: 0; height: 0; left: auto; right: 0px; bottom: -10px; border: 7px solid; border-color: #979797 #979797 transparent transparent; }
+
+.messanger .messanger_name { font-size: 30px; font-family: "Roboto", sans-serif; margin: 0; }
+
+.messanger .messanger_status { display: inline-block; font-size: 11px; color: white; padding: 2px 7px; border-radius: 3px; }
+
+.messanger .messanger_status--online { background: #04AE00; }
+
+.messanger .messanger_status--offline { background: #e3e3e3; }
 
 .sideBar { display: block; font-size: 16px; font-family: "Roboto", sans-serif; color: #979797; background-color: #191919; }
 
