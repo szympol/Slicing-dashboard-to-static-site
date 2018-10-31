@@ -512,11 +512,13 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 
 .slidecontainer { width: 90%; }
 
-.slidecontainer .slider { -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 100%; height: 12px; background: #e3e3e3; outline: none; opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ transition: opacity .2s; position: relative; }
+.slidecontainer .slider { -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 100%; height: 12px; background: #e3e3e3; outline: none; opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ transition: opacity .2s; overflow: hidden; }
 
 .slidecontainer .slider:hover { opacity: 1; }
 
-.slidecontainer .slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 32px; height: 32px; background: #4CAF50; cursor: pointer; margin-top: 50px; background: url("../images/icons/arrow-slider.png") no-repeat; }
+.slidecontainer .slider::-webkit-slider-runnable-track { background: #e3e3e3; height: 12px; }
+
+.slidecontainer .slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 32px; height: 32px; box-shadow: -100vw 0 0 100vw #ff0000; cursor: pointer; background: url("../images/icons/arrow-slider.png") no-repeat; }
 
 .slidecontainer .slider::-moz-range-thumb { width: 32px; height: 32px; background: #4CAF50; cursor: pointer; margin-top: 50px; }
 
