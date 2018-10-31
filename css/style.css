@@ -510,17 +510,19 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 
 .messanger .messanger_status--offline { background: #e3e3e3; }
 
-.slidecontainer { width: 90%; }
+.slidecontainer { display: block; margin: 0 auto; width: 500px; }
 
-.slidecontainer .slider { -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 100%; height: 12px; background: #e3e3e3; outline: none; opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ transition: opacity .2s; overflow: hidden; }
+.slidecontainer input[type="range"] { -webkit-appearance: none; -moz-apperance: none; outline: transparent; cursor: pointer; width: 100%; height: 6px; position: relative; background-image: -webkit-gradient(linear, left top, right top, color-stop(0.15, #ff0000), color-stop(0.15, #e3e3e3)); }
 
-.slidecontainer .slider:hover { opacity: 1; }
+.slidecontainer input[type='range']::-webkit-slider-thumb { -webkit-appearance: none !important; width: 32px; height: 32px; margin-top: 50px; cursor: pointer; background: url("../images/icons/arrow-slider.png") no-repeat; }
 
-.slidecontainer .slider::-webkit-slider-runnable-track { background: #e3e3e3; height: 12px; }
+.slidecontainer input[type="range"]::before { content: '0'; position: absolute; top: -20px; left: 0; z-index: 1; font-size: 14px; font-family: "Roboto", sans-serif; }
 
-.slidecontainer .slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 32px; height: 32px; box-shadow: -100vw 0 0 100vw #ff0000; cursor: pointer; background: url("../images/icons/arrow-slider.png") no-repeat; }
+.slidecontainer input[type="range"]::after { content: '168'; position: absolute; top: -20px; right: 0; z-index: 1; font-size: 14px; font-family: "Roboto", sans-serif; }
 
-.slidecontainer .slider::-moz-range-thumb { width: 32px; height: 32px; background: #4CAF50; cursor: pointer; margin-top: 50px; }
+.slidecontainer p { text-align: center; margin-top: 30px; font-size: 14px; }
+
+.slidecontainer--removeText { display: none; }
 
 .sideBar { display: block; font-size: 16px; font-family: "Roboto", sans-serif; color: #979797; background-color: #191919; }
 

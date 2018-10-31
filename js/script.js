@@ -158,25 +158,34 @@ document.querySelector('form').addEventListener('submit', function(event) {
 */
 
 
-var _R = document.getElementById("r"),
-_W = _R.parentNode,
-_O = _R.nextElementSibling;
-
-document.documentElement.classList.add("js");
-
-_R.addEventListener(
-"input",
-function (e) {
-	_O.value = _R.value;
-	_W.style.setProperty("--val", +_R.value);
-},
-false);
+$('input[type="range"]').on("change mousemove", function () {
+    var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
+    
+    $(this).css('background-image',
+                '-webkit-gradient(linear, left top, right top, '
+                +'color-stop(' + val + ', #ff0000), '
+                +'color-stop(' + val + ', #e3e3e3)'
+                +')'
+                );
+});
 
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
+var removeHours = document.getElementById("removeText");
 output.innerHTML = slider.value;
 
 slider.oninput = function() {
-  output.innerHTML = this.value;
-}
+  if (this.value == 0 ){
+      output.innerHTML = this.value + ' hour';
+  }
+  else if  (this.value == 1 ){
+        output.innerHTML = this.value + ' hour';
+    
+  }
+  else {
+    output.innerHTML = this.value + ' hours';
+  }
+  removeHours.classList.add('slidecontainer--removeText');
+};
+
