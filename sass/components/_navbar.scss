@@ -98,10 +98,11 @@
     font-family: $logo-font;
     font-size: $logo-size;
     color: #fff;
-    padding: 0 20px;
+    padding: 10px 20px;
   }
 
   .sideBar_nav {
+
     .sideBar_nav_links {
       padding: 15px 8px 15px 20px;
       text-decoration: none;
@@ -189,8 +190,9 @@
         z-index: 2;
         top: 0;
         left: 35px;
-        
+
       }
+
       .sideBar_manager_face_name {
         display: inline-block;
         margin-left: 70px;
@@ -204,21 +206,32 @@
   }
 }
 
+@media(max-width: 767px) {
+  @include grid('sm');
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
+}
+
+/* .show {
+  display: inline-block!important;
+}
 
 
-
-/*
-<div class="sideBar_nav_hoverLine"></div>
-        .sideBar_nav_hoverLine {
-          border: 1px solid white;
-          display: inline-block;
-        }
 .block {
-    display: block;
+    display: none;
 } 
 .menu{
     display: none;
 }
-.show{
-    display: inline-block;
-}*/
+ */

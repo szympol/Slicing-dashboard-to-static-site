@@ -1,13 +1,19 @@
 .topbar {
+    border-left: 1px solid $hoverBackground-color;
+    border-bottom: 1px solid $hoverBackground-color;
+
+    display: flex;
+    flex-direction: row-reverse;
     ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
         display: inline-block;
-        min-height: 35px;
+        min-height: 70px;
+        border-left: 1px solid $hoverBackground-color;
         li:first-child {
             display: inline-block;
-            border-left: 1px solid $hoverBackground-color;
+            margin: 0px 15px;
             .topbar_walletIcon, .topbar_quitIcon{
                 width: $button-font-size;
                 height: $button-font-size;
@@ -17,7 +23,7 @@
             select {
                 appearance: none;
                 display: inline-block;
-                border: 1px solid transparent;
+                border: 0px solid transparent;
                 padding: 5px 30px 5px 10px;
                 font-size: $topbar-font-size;
                 font-family: $pageHeader-font;
@@ -52,10 +58,12 @@
                 display: inline-block;
                 border-left: 1px solid $hoverBackground-color;
                 position: relative;
-                min-height: 35px;
+                min-height: 70px;
                 vertical-align: middle;
-                margin-top: -7px;
+
                 margin-right: -4px;
+                padding: 20px 0;
+                
                 &:hover {
                     background-color: $hoverBackground-color;
                 }
@@ -79,7 +87,7 @@
                     background-color: $mainButton-color;
                     content: '';
                    z-index: 1;
-                    top: 7px;
+                    top: 27px;
                     left: 25px;
                    // opacity: 0;
                   }
@@ -88,10 +96,10 @@
             li:nth-child(3){
                 display: inline-block;
                 border-left: 1px solid $hoverBackground-color;
-                min-height: 35px;
+                min-height: 70px;
                 vertical-align: middle;
-                margin-top:-7px;
                 margin-right: 14px;
+                padding: 20px 0;
                 //opacity: 0;
                 .topbar_profileIcon {
                     width: $button-font-size;
@@ -158,10 +166,11 @@
         li:last-child{
                 display: inline-block;
                 border-left: 1px solid $hoverBackground-color;
-                min-height: 35px;
+                min-height: 70px;
                 vertical-align: middle;
-                margin-top:-7px;
+ 
                 margin-right: 14px;
+                padding: 20px 0;
             .topbar_quitIcon{
                 width: $button-font-size;
                 height: $button-font-size;
