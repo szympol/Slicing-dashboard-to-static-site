@@ -4,6 +4,9 @@
     text-transform: uppercase;
     font-family: $pageHeader-font;
     color: $basicFont-color;
+    &--borderBottom {
+        border-bottom: 1px solid $hoverBackground-color;
+    }
 }
 
 .sectionHeader {
@@ -14,7 +17,9 @@
     font-weight: bold;
 }
 
-
+.generalStatistics {
+    padding: 20px;
+}
 
 //LINKS
 .link {
