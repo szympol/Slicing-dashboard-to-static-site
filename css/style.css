@@ -257,6 +257,8 @@ template { display: none; }
 
 .row { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
+.row--spaceBetween { -ms-flex-pack: justify; justify-content: space-between; }
+
 .main { margin-left: 250px; }
 
 .pages-background { height: 100vh; background-color: #F5F5F2; padding: 20px 20px; }
@@ -273,12 +275,20 @@ template { display: none; }
 
 .container-fluid--backgroundColor { background-color: #fff; }
 
+.calendar { padding: 30px; margin: 0 auto; -ms-flex-pack: center; justify-content: center; }
+
+.OneDigit { -ms-flex-direction: column; flex-direction: column; padding: 20px 40px 40px; }
+
+.tabs-position { -ms-flex-pack: center; justify-content: center; }
+
 /* Components */
 .pageHeader { font-size: 16px; text-transform: uppercase; font-family: "Roboto", sans-serif; color: #979797; }
 
 .pageHeader--borderBottom { border-bottom: 1px solid #e3e3e3; }
 
 .sectionHeader, .field label, .field--signup label, .field_select_fileType label, .field_select_language label { font-size: 16px; text-transform: initial; font-family: "Roboto", sans-serif; color: #979797; font-weight: bold; }
+
+.sectionHeader--paddingLeft { padding-left: 40px; }
 
 .generalStatistics { padding: 20px; }
 
@@ -294,7 +304,7 @@ template { display: none; }
 
 .link-icon:hover { fill: #FFA200; }
 
-.tabs { display: inline-block; padding: 6px 12px; margin-bottom: 0; font-size: 16px; font-family: "Roboto", sans-serif; color: #979797; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 2px; text-decoration: none; }
+.tabs { display: inline-block; padding: 6px 12px; margin-bottom: 0; font-size: 16px; font-family: "Roboto", sans-serif; color: #979797; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 2px; text-decoration: none; margin: 20px; }
 
 .tabs:hover, .tabs :focus { background-color: #e3e3e3; }
 
@@ -394,7 +404,7 @@ input[type="date"] { -webkit-appearance: none; -moz-appearance: none; appearance
 
 input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance: none; border-right: 1px solid #e3e3e3; }
 
-.calendarBackground { background: #fff url(../../solo-project-1/images/icons/calendar.svg) 95% 50% no-repeat; background-size: 13px 13px; box-shadow: none; }
+.calendarBackground { background-image: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 13'><path d='M0 0v4h13V0H0zm12 3H1V1h11v2zM0 7h3V6H0v1zm5 0h3V6H5v1zm5 0h3V6h-3v1zM0 10h3V9H0v1zm5 0h3V9H5v1zm5 0h3V9h-3v1zM0 13h3v-1H0v1zm5 0h3v-1H5v1zm5 0h3v-1h-3v1z'/></svg>"); background-size: 13px 13px; box-shadow: none; background-repeat: no-repeat; background-position: 95% 50%; }
 
 #calendar { border: 1px solid #e3e3e3; display: inline-block; border-radius: 4px; margin-right: 10px; box-shadow: none; /* .calendar_line { border-right: 10px solid $hoverBackground-color !important; width: 10px; height: auto; display: inline-block; padding: 10px 0px; }*/ }
 

@@ -15,6 +15,9 @@
     font-family: $sectionHeader-font;
     color: $basicFont-color;
     font-weight: bold;
+    &--paddingLeft {
+        padding-left: 40px;
+    }
 }
 
 .generalStatistics {
@@ -73,7 +76,7 @@
     border: 1px solid transparent;
     border-radius: 2px;
     text-decoration: none;
-
+    margin: 20px;
     &:hover,
     :focus {
         background-color: $hoverBackground-color;
@@ -368,9 +371,11 @@ input[id="start"] {
 }
 
 .calendarBackground {
-    background: #fff url(../../solo-project-1/images/icons/calendar.svg) 95% 50% no-repeat;
+    background-image: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 13'><path d='M0 0v4h13V0H0zm12 3H1V1h11v2zM0 7h3V6H0v1zm5 0h3V6H5v1zm5 0h3V6h-3v1zM0 10h3V9H0v1zm5 0h3V9H5v1zm5 0h3V9h-3v1zM0 13h3v-1H0v1zm5 0h3v-1H5v1zm5 0h3v-1h-3v1z'/></svg>");
     background-size: $link-small-size $link-small-size;
     box-shadow: none;
+    background-repeat: no-repeat;    
+    background-position: 95% 50%;
 }
 
 #calendar {

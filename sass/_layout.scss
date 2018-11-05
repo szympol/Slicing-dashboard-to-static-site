@@ -17,6 +17,9 @@
   .row {
     display: flex;
     flex-wrap: wrap;
+    &--spaceBetween{
+      justify-content: space-between;
+    }
   }
 
   .main {
@@ -53,5 +56,20 @@
     &--backgroundColor {
       background-color: #fff;
     }
+  }
+  
+  .calendar {
+    padding: 30px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .OneDigit {
+    flex-direction: column;
+    padding: 20px 40px 40px;
+  }
+  
+ .tabs-position {
+    justify-content: center;
   }
   
