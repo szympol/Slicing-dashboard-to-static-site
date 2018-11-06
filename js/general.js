@@ -50,24 +50,54 @@ var chart = new Chart(ctx, {
           // 4
           label: "Signups",
           // 5
-          backgroundColor: '#8DBEC8',
-          borderColor: '#8DBEC8',
+          backgroundColor: '#56819F',
+          borderColor: '#56819F',
           // 6
           data: [ 52, 51, 41, 94, 26, 6, 72, 9, 21, 88 ],
       },
       {
           label: "FTD",
-          backgroundColor: '#F29E4E',
-          borderColor: '#F29E4E',
+          backgroundColor: '#F58220',
+          borderColor: '#F58220',
           data: [ 6, 72, 1, 0, 47, 11, 50, 44, 63, 76 ],
       },
       {
           label: "Earned",
-          backgroundColor: '#71B374',
-          borderColor: '#71B374',
+          backgroundColor: '#04AE00',
+          borderColor: '#04AE00',
           data: [ 59, 49, 68, 90, 67, 41, 13, 38, 48, 48 ],
           // 7
-          hidden: true,
+          
       }]
   },
+  options: {
+      
+    scales: {
+        xAxes: [{
+                    gridLines: {
+                        display:false
+                    }
+                }],
+        yAxes: [{
+                    gridLines: {
+                        display:false
+                    }   
+                }]
+        },
+       /*  title: {
+            display: true,
+            text: 'Custom Chart Title'
+        }, */
+        legend: {
+            display: false,
+        },
+        layout: {
+            padding: {
+                left: 40,
+                right: 40,
+                top: 40,
+                bottom: 40
+            }
+        }
+}
 });

@@ -20,6 +20,15 @@
     &--spaceBetween{
       justify-content: space-between;
     }
+    &--center {
+      padding: 30px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+    &--column {
+      flex-direction: column;
+    padding: 20px 40px 40px;
+    }
   }
 
   .main {
@@ -27,7 +36,7 @@
   }
 
   .pages-background {
-    height: 100vh;
+    height: 100%;
     background-color: $betweenSectionBackground-color;
     padding: 20px 20px;
   }
@@ -36,20 +45,20 @@
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-/*     padding-left: 20px;
-    padding-right: 20px; */
     &--spaceBetweenSections {
       margin-bottom: 20px;
     }
     &--backgroundColor {
       background-color: #fff;
+    }
+    &--paddingSides {
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
   
   .container-fluid {
     width: 100%;
-/*     padding-left: 20px;
-    padding-right: 20px; */
     &--spaceBetweenSections {
       margin-bottom: 20px;
     }
@@ -58,11 +67,7 @@
     }
   }
   
-  .calendar {
-    padding: 30px;
-    margin: 0 auto;
-    justify-content: center;
-  }
+  
 
   .OneDigit {
     flex-direction: column;
