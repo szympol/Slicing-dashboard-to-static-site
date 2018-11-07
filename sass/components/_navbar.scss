@@ -160,6 +160,9 @@
     padding: 15px 8px 15px 20px;
     border-top: 1px solid $basifFontBright-color;
     width: 250px;
+    #chat {
+      cursor: pointer;
+    }
 
     .sideBar_manager_title {
       font-size: $notification-font-size;

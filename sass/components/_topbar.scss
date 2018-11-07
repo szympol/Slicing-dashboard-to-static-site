@@ -13,6 +13,9 @@
         display: inline-block;
         min-height: 70px;
         border-left: 1px solid $hoverBackground-color;
+        li {
+            cursor: pointer;
+        }
         li:first-child {
             display: inline-block;
             margin: 0px 15px;

@@ -20,6 +20,9 @@
     &--spaceBetween{
       justify-content: space-between;
     }
+    &--flexEnd {
+      justify-content: flex-end;
+    }
     &--center {
       padding: 30px;
       margin: 0 auto;
@@ -28,6 +31,9 @@
     &--column {
       flex-direction: column;
     padding: 20px 40px 40px;
+    }
+    &--widthQuit {
+      width: 400px;
     }
   }
 
@@ -55,6 +61,7 @@
       padding-left: 40px;
       padding-right: 40px;
     }
+    
   }
   
   .container-fluid {
