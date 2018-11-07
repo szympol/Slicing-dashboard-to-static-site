@@ -170,7 +170,7 @@
       font-family: $pageHeader-font;
       color: $basicFont-color;
     }
-
+    
     .sideBar_manager_face {
       display: inline-block;
       border-radius: 50%;
@@ -182,7 +182,7 @@
       background-size: 50px 50px;
       background-repeat: no-repeat;
       background-position: center center;
-
+      
       &:after {
         position: absolute;
         width: 10px;
@@ -204,7 +204,9 @@
         font-size: $notification-font-size;
       }
     }
-
+    .sideBar_manager_face--secondLevel {
+      background-image: url('../images/icons/manager.jpg')!important;
+    }
 
   }
 }

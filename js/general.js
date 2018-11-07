@@ -147,3 +147,10 @@ document.getElementById('quit').addEventListener('click', function () {
     document.getElementById('chat').addEventListener('click', function () {
         openModal('#chatModal');
   });
+
+  document.getElementById('addURL1').addEventListener('click', function () {
+    openModal('#addURLModal');
+});
+document.getElementById('addURL2').addEventListener('click', function () {
+    openModal('#addURLModal');
+});

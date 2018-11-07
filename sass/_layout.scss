@@ -35,6 +35,24 @@
     &--widthQuit {
       width: 400px;
     }
+    &--widthLogin {
+      width: 550px;
+      height: 38px;
+    }
+    &--widthChat {
+      width: 570px;
+    }
+    &--marginTop {
+      margin-top: 15px;
+    }
+    &--marginLoginName {
+      margin-top: 40px;
+      margin-bottom: 25px;
+    }
+    &--marginBottomMessage {
+      margin-bottom: 150px;
+    }
+
   }
 
   .main {
