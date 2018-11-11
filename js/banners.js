@@ -11,6 +11,7 @@ menu.addEventListener('click', function() {
     document.querySelector('.sideBar_manager').classList.toggle('sideBar--showInlineBlock', visible);
     document.querySelector('.topbar').classList.toggle('main--hidedSidebar', visible);
     document.querySelector('.pages-background').classList.toggle('main--hidedSidebar', visible);
+    document.querySelector('.topbar').classList.toggle('main--mobile--hidedSidebar', visible);
   };
 
   document.querySelector('.hamburger').addEventListener('click', function(e) {

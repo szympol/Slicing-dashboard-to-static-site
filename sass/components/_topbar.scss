@@ -129,3 +129,16 @@
 
 }
 }
+
+@media(max-width: 767px) {
+    @include grid('sm');
+    .topbar {
+        display: flex;
+        flex-direction: row;
+        ul {
+            li{
+                border-left: 0px solid $hoverBackground-color !important;   
+        }
+    }
+    }
+}

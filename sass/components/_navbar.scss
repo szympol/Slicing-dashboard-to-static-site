@@ -223,23 +223,6 @@
   }
 }
 
-@media(max-width: 767px) {
-  @include grid('sm');
-}
-
-@media(min-width: 768px) {
-  @include grid('md');
-}
-
-@media(min-width: 992px) {
-  @include grid('lg');
-
-}
-
-@media(min-width: 1200px) {
-  @include grid('xl');
-}
-
 #sideBar--hide{
   display: none;
 }
@@ -252,5 +235,32 @@
   display: block!important;
 }
 
+@media(max-width: 767px) {
+  @include grid('sm');
 
-
+  .sideBar {
+    height: auto;
+    max-width: none;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+  }
+  .main {
+    margin-left: 0px;
+    &--hidedSidebar {
+      margin-left: 0px;
+    }
+  }
+  .main--mobile {
+    margin-top: 70px;
+    &--hidedSidebar {
+      margin-top: 588.219px;
+    }
+  }
+  .sideBar_logo {
+    display: inline-block!important;
+  }
+}
