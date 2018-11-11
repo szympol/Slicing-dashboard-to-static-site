@@ -6,6 +6,9 @@
     &--spaceBetween{
       justify-content: space-between;
     }
+    &--padding-bottom {
+      padding-bottom: 30px;
+    }
     &--flexEnd {
       justify-content: flex-end;
     }
@@ -40,6 +43,10 @@
     }
     &--marginBottomMessage {
       margin-bottom: 150px;
+    }
+    &--personaldataAlign {
+      text-align: right;
+      padding-right: 30px;
     }
 
   }
@@ -116,6 +123,15 @@
         appearance: none;
         border-right: none!important;
         border-bottom: 1px solid $hoverBackground-color !important;
+    }
+
+    .row--personaldataAlign {
+      text-align: left;
+      padding-right: 0px;
+    }
+
+    .postBackMargin {
+      margin-bottom: 15px;
     }
     }
     

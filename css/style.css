@@ -207,6 +207,8 @@ template { display: none; }
 
 .row--spaceBetween { -ms-flex-pack: justify; justify-content: space-between; }
 
+.row--padding-bottom { padding-bottom: 30px; }
+
 .row--flexEnd { -ms-flex-pack: end; justify-content: flex-end; }
 
 .row--center { padding: 30px; margin: 0 auto; -ms-flex-pack: center; justify-content: center; }
@@ -226,6 +228,8 @@ template { display: none; }
 .row--marginLoginName { margin-top: 40px; margin-bottom: 25px; }
 
 .row--marginBottomMessage { margin-bottom: 150px; }
+
+.row--personaldataAlign { text-align: right; padding-right: 30px; }
 
 .main { margin-left: 250px; }
 
@@ -268,7 +272,9 @@ template { display: none; }
   .col-sm-11 { -ms-flex: 0 0 91.66667%; flex: 0 0 91.66667%; max-width: 91.66667%; }
   .col-sm-12 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
   #calendar { width: 153px; }
-  input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance: none; border-right: none !important; border-bottom: 1px solid #e3e3e3 !important; } }
+  input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance: none; border-right: none !important; border-bottom: 1px solid #e3e3e3 !important; }
+  .row--personaldataAlign { text-align: left; padding-right: 0px; }
+  .postBackMargin { margin-bottom: 15px; } }
 
 @media (min-width: 768px) { .col-md-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
   .col-md-2 { -ms-flex: 0 0 16.66667%; flex: 0 0 16.66667%; max-width: 16.66667%; }
@@ -316,7 +322,7 @@ template { display: none; }
 
 .pageHeader--padding { padding: 20px; }
 
-.sectionHeader, .field label, .field--signup label, .field_select label { font-size: 16px; text-transform: initial; font-family: "Roboto", sans-serif; color: #979797; font-weight: bold; }
+.sectionHeader, .field label, .field--signup label, .field_select label, .personalData span { font-size: 16px; text-transform: initial; font-family: "Roboto", sans-serif; color: #979797; font-weight: bold; }
 
 .sectionHeader--paddingLeft { padding-left: 40px; }
 
@@ -398,7 +404,8 @@ template { display: none; }
 
 .table-sorting--center tbody tr > td { text-align: center; }
 
-@media (max-width: 640px) { .tablesaw-cell-label p svg { display: none; } }
+@media (max-width: 640px) { .tablesaw-cell-label p svg { display: none; }
+  .table-sorting--center tbody tr > td { text-align: left !important; } }
 
 .btn { display: inline-block; padding: 6px 18px; font-size: 18px; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px; font-family: "Roboto", sans-serif; color: #fff; }
 
@@ -484,7 +491,7 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 
 .field--signup label { display: block; padding: 10px 0; }
 
-.field--signup textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; min-width: 90%; height: 250px; padding: 20px; border-radius: 3px; resize: none; cursor: pointer; border: none; border: solid 1px #e3e3e3; font-size: 12px; }
+.field--signup textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; min-width: 95%; height: 250px; padding: 20px; border-radius: 3px; resize: none; cursor: pointer; border: none; border: solid 1px #e3e3e3; font-size: 12px; }
 
 .field--signup textarea:hover { border: solid 1px #979797; }
 
@@ -540,6 +547,22 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 
 .field_EnterName input::placeholder { color: #979797; }
 
+.personalData { padding-bottom: 0px; }
+
+.personalData span { padding-top: 7px; padding-bottom: 7px; }
+
+.personalData input { -webkit-appearance: none; -moz-appearance: none; appearance: none; padding: 10px; border-radius: 3px; cursor: pointer; border: none; border: solid 1px #e3e3e3; font-size: 14px; }
+
+.personalData input:hover { border: solid 1px #979797; }
+
+.personalData input:hover:-ms-input-placeholder { color: #000000; }
+
+.personalData input:hover::placeholder { color: #000000; }
+
+.personalData input:-ms-input-placeholder { color: #979797; }
+
+.personalData input::placeholder { color: #979797; }
+
 .checkboxList { min-width: 90%; }
 
 .checkboxList input[type=checkbox] { display: none; }
@@ -590,7 +613,7 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 
 .messanger .messanger_status--offline { background: #e3e3e3; }
 
-.slidecontainer { display: block; margin: 0 auto; width: 500px; }
+.slidecontainer { display: block; margin: 0 auto; }
 
 .slidecontainer input[type="range"] { -webkit-appearance: none; -moz-apperance: none; outline: transparent; cursor: pointer; width: 100%; height: 6px; position: relative; background-image: -webkit-gradient(linear, left top, right top, color-stop(0.15, #ff0000), color-stop(0.15, #e3e3e3)); }
 

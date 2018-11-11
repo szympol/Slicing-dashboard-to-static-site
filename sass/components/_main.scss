@@ -267,6 +267,9 @@
             }
         }
     }
+    .table-sorting--center tbody tr > td {
+        text-align: left !important;
+    }
 
   }
 
@@ -495,6 +498,9 @@ input[id="start"] {
     margin-left: 50px;
 }
 
+
+
+
 //Form field
 .field {
     label {
@@ -536,7 +542,7 @@ input[id="start"] {
 
     textarea {
         appearance: none;
-        min-width: 90%;
+        min-width: 95%;
         height: 250px;
         padding: 20px;
         border-radius: 3px;
@@ -697,7 +703,35 @@ input[id="start"] {
     }
 }
 
+.personalData {
+    padding-bottom: 0px;
+    span {
+        @extend .sectionHeader;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    input {
+        appearance: none;
+        padding: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+        border: none;
+        border: solid 1px $hoverBackground-color;
+        font-size: $notification-font-size;
 
+        &:hover {
+            border: solid 1px $basicFont-color;
+
+            &::placeholder {
+                color: $paragraph-color;
+            }
+        }
+
+        &::placeholder {
+            color: $basicFont-color;
+        }
+    }
+}
 
 .checkboxList {
     min-width: 90%;
@@ -855,7 +889,7 @@ input[id="start"] {
 .slidecontainer {
     display: block;
     margin: 0 auto;
-    width: 500px; 
+   // width: 500px; 
     input[type="range"]{
         -webkit-appearance: none;
         -moz-apperance: none;
