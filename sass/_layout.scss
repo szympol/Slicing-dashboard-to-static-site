@@ -52,7 +52,10 @@
   }
 
   .main {
-    margin-left: 250px;
+    margin-left: 60px;
+    &--hidedSidebar {
+      margin-left: 250px;
+    }
   }
 
   .pages-background {

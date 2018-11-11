@@ -90,21 +90,25 @@ selectPaginationElements[7].addEventListener('click', BackgroundOnPaginationElem
 selectPaginationElements[8].addEventListener('click', BackgroundOnPaginationElement);
 
 /*
-function toggleMenu(visible) {
-    document.querySelector('.menu').classList.toggle('show', visible);
+let menu = document.querySelector('.hamburger');
+
+menu.addEventListener('click', function() {
+  this.classList.toggle('hamburger--active');
+}, false);
+
+
+  function toggleMenu(visible) {
+    document.querySelector('.sideBar_logo').classList.toggle('sideBar--showInlineBlock', visible);
+    document.querySelector('.sideBar_nav').classList.toggle('sideBar--showBlock', visible);
+    document.querySelector('.sideBar_manager').classList.toggle('sideBar--showInlineBlock', visible);
+    document.querySelector('.topbar').classList.toggle('main--hidedSidebar', visible);
+    document.querySelector('.pages-background').classList.toggle('main--hidedSidebar', visible);
   };
 
   document.querySelector('.hamburger').addEventListener('click', function(e) {
     e.preventDefault();
     toggleMenu()
-  });
-*/
-
-/*   let menu = document.querySelector('.hamburger');
-
-menu.addEventListener('click', function() {
-  this.classList.toggle('hamburger--active');
-}, false); */
+  }); */
   
 
 

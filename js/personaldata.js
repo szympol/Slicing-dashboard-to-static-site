@@ -5,16 +5,18 @@ menu.addEventListener('click', function() {
 }, false);
 
 
-
   function toggleMenu(visible) {
-    document.querySelector('.menu').classList.toggle('show', visible);
+    document.querySelector('.sideBar_logo').classList.toggle('sideBar--showInlineBlock', visible);
+    document.querySelector('.sideBar_nav').classList.toggle('sideBar--showBlock', visible);
+    document.querySelector('.sideBar_manager').classList.toggle('sideBar--showInlineBlock', visible);
+    document.querySelector('.topbar').classList.toggle('main--hidedSidebar', visible);
+    document.querySelector('.pages-background').classList.toggle('main--hidedSidebar', visible);
   };
 
   document.querySelector('.hamburger').addEventListener('click', function(e) {
     e.preventDefault();
     toggleMenu()
   });
-
 
 
 

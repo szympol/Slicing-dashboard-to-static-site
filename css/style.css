@@ -231,7 +231,9 @@ template { display: none; }
 
 .row--personaldataAlign { text-align: right; padding-right: 30px; }
 
-.main { margin-left: 250px; }
+.main { margin-left: 60px; }
+
+.main--hidedSidebar { margin-left: 250px; }
 
 .pages-background { height: 100%; background-color: #F5F5F2; padding: 20px 20px; }
 
@@ -649,7 +651,7 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 
 .manager_face--modal--secondLevel { background-image: url("../images/icons/manager.jpg") !important; }
 
-.hamburger { display: inline-block; cursor: pointer; padding: 0 15px 0 30px; }
+.hamburger { display: inline-block; cursor: pointer; padding: 20px; }
 
 .hamburger:focus > .hamburger__container { box-shadow: 0 0 2px 2px #51a7e8; }
 
@@ -690,6 +692,12 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
 .sideBar .sideBar_nav .sideBar_nav_links:hover .sideBar_nav_icon { fill: #fff; }
 
 .sideBar .sideBar_nav .sideBar_nav_links:hover::before { opacity: 1; }
+
+.sideBar .sideBar_nav_links--active { background-color: #282828; }
+
+.sideBar .sideBar_nav_links--active .sideBar_nav_pagesTitles { color: #fff; }
+
+.sideBar .sideBar_nav_links--active .sideBar_nav_icon { fill: #fff; }
 
 .sideBar .sideBar_manager { display: inline-block; margin-top: 30px; padding: 15px 8px 15px 20px; border-top: 1px solid rgba(151, 151, 151, 0.6); width: 250px; }
 
@@ -757,7 +765,12 @@ input[id="start"] { -webkit-appearance: none; -moz-appearance: none; appearance:
   .col-xl-11 { -ms-flex: 0 0 91.66667%; flex: 0 0 91.66667%; max-width: 91.66667%; }
   .col-xl-12 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; } }
 
-/* .show { display: inline-block!important; } .block { display: none; }  .menu{ display: none; } */
+#sideBar--hide { display: none; }
+
+.sideBar--showInlineBlock { display: inline-block !important; }
+
+.sideBar--showBlock { display: block !important; }
+
 .topbar { border-left: 1px solid #e3e3e3; border-bottom: 1px solid #e3e3e3; display: -ms-flexbox; display: flex; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
 
 .topbar ul { padding: 0; margin: 0; list-style-type: none; display: inline-block; min-height: 70px; border-left: 1px solid #e3e3e3; }

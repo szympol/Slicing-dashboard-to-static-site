@@ -20,13 +20,13 @@
 <body>
 
     <div class="sideBar">
-        <div class="sideBar_logo">Just do it</div>
+        <div class="sideBar_logo" id="sideBar--hide">Just do it</div>
         <div class="hamburger">
             <span class="hamburger__container" tabindex="-1">
                 <span class="hamburger__bars"></span>
             </span>
         </div>
-        <nav class="sideBar_nav">
+        <nav class="sideBar_nav" id="sideBar--hide">
             <a class="sideBar_nav_links" href="../index.html">
                 <svg class="sideBar_nav_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     x="0px" y="0px" viewBox="0 0 17 16" style="enable-background:new 0 0 17 16;" xml:space="preserve">
@@ -57,7 +57,7 @@
        S3.1,2,4.5,2z M7.7,7.7L6.9,8.3C8,9.5,8,11.1,8,12.9V13H1v-0.1C1,11.1,1,9.5,2,8.3L1.3,7.7C0,9.1,0,10.9,0,12.9L0,14h9l0-1.1
        C9,10.9,9,9.1,7.7,7.7z" />
                 </svg><span class="sideBar_nav_pagesTitles">Personal data</span></a>
-            <a class="sideBar_nav_links" href="#"><svg class="sideBar_nav_icon" xmlns="http://www.w3.org/2000/svg"
+            <a class="sideBar_nav_links sideBar_nav_links--active" href="#"><svg class="sideBar_nav_icon" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;"
                     xml:space="preserve">
                     <path d="M10.5,0h-8C1.1,0,0,1.1,0,2.5v8C0,11.9,1.1,13,2.5,13h8c1.4,0,2.5-1.1,2.5-2.5v-8C13,1.1,11.9,0,10.5,0z M1,10.5v-8
@@ -72,7 +72,7 @@
        C13,6.5,10.5,4,7.5,4z M8,11H1v1h7V11z" />
                 </svg><span class="sideBar_nav_pagesTitles">Postback</span></a>
         </nav>
-        <div class="sideBar_manager">
+        <div class="sideBar_manager" id="sideBar--hide">
             <div id="chat">
                 <h2 class="sideBar_manager_title">your manager</h2>
                 <div class="sideBar_manager_face sideBar_manager_face--secondLevel">

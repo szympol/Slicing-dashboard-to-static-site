@@ -4,7 +4,7 @@
 .hamburger {
   display: inline-block;
   cursor: pointer;
-  padding: 0 15px 0 30px;
+  padding: 20px;
 
   &:focus {
     &>.hamburger__container {
@@ -154,6 +154,18 @@
 
   }
 
+  .sideBar_nav_links--active {
+    background-color: $sideBar-hover-background-color;
+
+    .sideBar_nav_pagesTitles {
+      color: #fff;
+    }
+
+    .sideBar_nav_icon {
+      fill: #fff;
+    }
+  }
+
   .sideBar_manager {
     display: inline-block;
     margin-top: 30px;
@@ -228,15 +240,17 @@
   @include grid('xl');
 }
 
-/* .show {
+#sideBar--hide{
+  display: none;
+}
+
+.sideBar--showInlineBlock{
   display: inline-block!important;
 }
 
-
-.block {
-    display: none;
-} 
-.menu{
-    display: none;
+.sideBar--showBlock{
+  display: block!important;
 }
- */
+
+
+

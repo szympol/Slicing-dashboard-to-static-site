@@ -5,15 +5,31 @@ menu.addEventListener('click', function() {
 }, false);
 
 
-
   function toggleMenu(visible) {
-    document.querySelector('.menu').classList.toggle('show', visible);
+    document.querySelector('.sideBar_logo').classList.toggle('sideBar--showInlineBlock', visible);
+    document.querySelector('.sideBar_nav').classList.toggle('sideBar--showBlock', visible);
+    document.querySelector('.sideBar_manager').classList.toggle('sideBar--showInlineBlock', visible);
+    document.querySelector('.topbar').classList.toggle('main--hidedSidebar', visible);
+    document.querySelector('.pages-background').classList.toggle('main--hidedSidebar', visible);
   };
 
   document.querySelector('.hamburger').addEventListener('click', function(e) {
     e.preventDefault();
     toggleMenu()
   });
+
+
+
+ /*  var tableSortingTextElements = document.querySelectorAll('.table-sorting thead tr th p');
+  var tableSortingSvgElements = document.querySelectorAll('.table-sorting thead tr th p svg');
+  [].forEach.call(tableSortingTextElements, function(item, index){
+      item.addEventListener('mouseenter', function(){
+          tableSortingSvgElements[index].classList.add('opacity-full');
+      });
+      item.addEventListener('mouseleave', function(){
+          tableSortingSvgElements[index].classList.remove('opacity-full');
+      });
+  }); */
 
 
 
