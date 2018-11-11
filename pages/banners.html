@@ -127,7 +127,7 @@
                 </svg>
 
             </li>
-            </ul>
+        </ul>
     </div>
 
     <section class="pages-background main pages-background--heightBackground">
@@ -317,10 +317,10 @@
             </div>
             <div class="sectionHeader--borderBottom sectionHeader--marginTop sectionHeader--minusMarginSides"></div>
             <div class="row row--widthChat row--marginTop">
-                <div class="col-lg-2">
-                    <div class="manager_face--modal manager_face--modal--secondLevel"></div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <div class="manager_face--modal"></div>
                 </div>
-                <div class="messanger col-lg-6">
+                <div class="messanger col-sm-6 cold-md-6 col-lg-6">
                     <p class="messanger_name">Michael E.</p>
                     <div class="messanger_status messanger_status--online">online</div>
                     <div class="messanger_status messanger_status--offline">offline</div>
@@ -345,12 +345,12 @@
             </div>
             <div class="sectionHeader--borderBottom sectionHeader--marginTop sectionHeader--minusMarginSides"></div>
             <div class="row row-spaceBetween row--marginTop">
-                <form action="" method="POST" class="col-lg-10">
+                <form action="" method="POST" class="col-sm-12 col-md-10 col-lg-10 postBackMargin">
                     <div class="field_EnterName ">
                         <input type="text" id="EnterName" name="EnterName" placeholder="Enter the message.">
                     </div>
                 </form>
-                <button class="btn btn--submit js--close-modal col-lg-2 col-sm-12" type="submit">Enter</button>
+                <button class="btn btn--submit js--close-modal col-md-2 col-lg-2 col-sm-12" type="submit">Enter</button>
             </div>
         </div>
 
@@ -393,8 +393,8 @@
                 <div class="btn-close js--close-modal">x</div>
             </div>
             <div class="sectionHeader--borderBottom sectionHeader--marginTop sectionHeader--minusMarginSides"></div>
-            <div class="row row--widthChat row--marginTop">
-                <div class="col-sm-12 col-md-5 col-lg-5">
+            <div class="row row--widthAddURL row--marginTop">
+                <div class="col-sm-12 col-md-5 col-lg-5 postBackMargin">
                     <form action="" method="POST">
                         <div class="field">
                             <label>Scheme name</label>
@@ -402,10 +402,10 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-sm-12 col-md-5 col-lg-5">
+                <div class="col-sm-12 col-md-5 col-lg-5 postBackMargin">
                     <form action="" method="POST">
                         <div class="field_select">
-                            <label for="">Select company</label>
+                            <label for="company">Select company</label>
                             <select name="company" id="company">
                                 <option value="item-1">Select</option>
                                 <option value="item-2">Company 2</option>
@@ -429,50 +429,50 @@
                     </form>
                 </div>
             </div>
-            <div class="row row--widthChat row--marginTop">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                            <form action="" method="POST">
-                                <div class="field_select">
-                                    <label for="">Weight-Height</label>
-                                    <select name="Weight-Height" id="Weight-Height">
-                                        <option value="item-1">Select</option>
-                                        <option value="item-2">5mb, 1000x1000</option>
-                                        <option value="item-3">10mb, 2000x2000</option>
-                                        <option value="item-4">15mb, 3000x3000</option>
-                                        <option value="item-5">20mb, 4000x4000</option>
-                                    </select>
-                                </div>
-                            </form>
+            <div class="row row--widthAddURL row--marginTop">
+                <div class="col-sm-12 col-md-4 col-lg-4 postBackMargin">
+                    <form action="" method="POST">
+                        <div class="field_select">
+                            <label for="">Weight-Height</label>
+                            <select name="Weight-Height" id="Weight-Height">
+                                <option value="item-1">Select</option>
+                                <option value="item-2">5mb, 1000x1000</option>
+                                <option value="item-3">10mb, 2000x2000</option>
+                                <option value="item-4">15mb, 3000x3000</option>
+                                <option value="item-5">20mb, 4000x4000</option>
+                            </select>
                         </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <form action="" method="POST">
-                            <div class="field_select">
-                                <label for="">Design</label>
-                                <select name="Design" id="Design">
-                                    <option value="item-1">Select</option>
-                                    <option value="item-2">Super</option>
-                                    <option value="item-3">Perfect</option>
-                                    <option value="item-4">Superb</option>
-                                    <option value="item-5">Magnificent</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <form action="" method="POST">
-                            <div class="field_select">
-                                    <label for="">File type</label>
-                                    <select name="fileType" id="fileType">
-                                        <option value="item-1">All</option>
-                                        <option value="item-2">.png</option>
-                                        <option value="item-3">.raw</option>
-                                        <option value="item-4">.jpg</option>
-                                        <option value="item-5">.gif</option>
-                                    </select>
-                            </div>
-                        </form>
-                    </div>
+                    </form>
                 </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 postBackMargin">
+                    <form action="" method="POST">
+                        <div class="field_select">
+                            <label for="">Design</label>
+                            <select name="Design" id="Design">
+                                <option value="item-1">Select</option>
+                                <option value="item-2">Super</option>
+                                <option value="item-3">Perfect</option>
+                                <option value="item-4">Superb</option>
+                                <option value="item-5">Magnificent</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ">
+                    <form action="" method="POST">
+                        <div class="field_select">
+                            <label for="">File type</label>
+                            <select name="fileType" id="fileType">
+                                <option value="item-1">All</option>
+                                <option value="item-2">.png</option>
+                                <option value="item-3">.raw</option>
+                                <option value="item-4">.jpg</option>
+                                <option value="item-5">.gif</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
             <div class="sectionHeader--borderBottom sectionHeader--marginTop sectionHeader--minusMarginSides"></div>
 
             <div class="row">
@@ -614,9 +614,9 @@
                         </div>
                     </form>
                 </div>
-                
+
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                        <p class="sectionHeader">Select websites</p>
+                    <p class="sectionHeader">Select websites</p>
                     <form action="" method="POST">
                         <div class="checkboxList">
                             <input type="checkbox" name="option-1" id="option-1">
@@ -757,7 +757,7 @@
             </div>
             <div class="sectionHeader--borderBottom sectionHeader--marginTop sectionHeader--minusMarginSides"></div>
             <div class="row  row--marginTop">
-                <form action="" method="POST" class="col-sm-12 col-md-6 col-lg-6">
+                <form action="" method="POST" class="col-sm-12 col-md-6 col-lg-6 postBackMargin">
                     <div class="field">
                         <input type="text" name="name" placeholder="Generated link">
                     </div>

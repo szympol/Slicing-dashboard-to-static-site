@@ -124,10 +124,37 @@
         border-right: none!important;
         border-bottom: 1px solid $hoverBackground-color !important;
     }
+    .row {
+      &--personaldataAlign {
+        text-align: left;
+        padding-right: 0px;
+      }
+      &--widthAddURL {
+        width: 300px;
+      }
+      &--widthQuit {
+        width: 200px;
+      }
+      &--widthChat {
+        width: 400px;
+      }
+      &--widthLogin {
+        width: 300px;
+        height: 130px;
+        form {
+          div {
+            input {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
 
-    .row--personaldataAlign {
-      text-align: left;
-      padding-right: 0px;
+    .field_EnterName{
+      input {
+        width: 100% !important;
+      }
     }
 
     .postBackMargin {
