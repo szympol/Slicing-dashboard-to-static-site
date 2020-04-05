@@ -1,4 +1,4 @@
-[<img src="https://github.com/szympol/solo-project-1/blob/master/images/dashboard.JPG?raw=true" align="right" alt="dashboard" width="40%">](https://github.com/szympol/solo-project-1/blob/master/images/dashboard.JPG)
+[<img src="https://github.com/szympol/Slicing-dashboard-to-static-site/blob/master/images/dashboard.JPG?raw=true" align="right" alt="dashboard" width="40%">](https://github.com/szympol/Slicing-dashboard-to-static-site/blob/master/images/dashboard.JPG)
 
 # Dashboard slicing
 
@@ -8,11 +8,11 @@ Slicing a dashboard from PSD to fully Responsive Website. This project includes:
 - pop-ups (i.e. login, quit, chat modals),
 - my own styling, grid and scripts.
 
-Based on [PSD Dashboard](https://github.com/szympol/solo-project-1/blob/master/images/dashboard.psd).
+Based on [PSD Dashboard](https://github.com/szympol/Slicing-dashboard-to-static-site/blob/master/images/dashboard.psd).
 
 ## Getting Started
 
-- [View the dashboard project online](https://szympol.github.io/solo-project-1/)
+- [View the dashboard project online](https://szympol.github.io/Slicing-dashboard-to-static-site/)
 
 Please follow instructions below, if you are willing to run the project locally.
 
