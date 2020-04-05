@@ -27,7 +27,7 @@ Please copy and paste below commands to your Git terminal step by step to get a 
 Download a repository:
 
 ```node
-git clone git@github.com:szympol/solo-project-1.git dashboard
+git clone git@github.com:szympol/Slicing-dashboard-to-static-site.git dashboard
 ```
 
 Go to the project working directory:
